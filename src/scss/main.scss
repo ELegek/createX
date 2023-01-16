@@ -9,5 +9,8 @@
 // @import "./base/spollers";
 
 // подключения компонентов страницы
-@import "./components/header";
 @import "./components/nav";
+@import "./components/header-contacts";
+
+// подключения секций страницы
+@import "./components/header";
