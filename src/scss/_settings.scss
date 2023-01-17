@@ -201,14 +201,36 @@ li {
   text-transform: uppercase;
   color: var(--light-color);
 }
-.btn--stroke {
-}
+
 .btn--stroke-light {
   border-color: var(--light-color);
 }
-.btn--fill {
-}
+
 .btn--fill-primary {
   background: #ff5a30;
   padding: 16px 34px;
+}
+
+.title {
+  margin-bottom: 25px;
+  font-weight: 700;
+  font-size: 46px;
+  line-height: 130%;
+  color: var(--main-color);
+  &--center {
+    text-align: center;
+  }
+}
+.descr {
+  margin-bottom: 60px;
+  font-size: 18px;
+  line-height: 150%;
+  color: var(--storm-color);
+  &--center {
+    text-align: center;
+  }
+}
+
+.section-offset {
+  padding-top: 120px;
 }
