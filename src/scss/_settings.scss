@@ -34,6 +34,15 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5 {
+  padding: 0px;
+  margin: 0px;
+}
+
 .page {
   height: 100%;
   font-family: var(--font-family, sans-serif);
@@ -61,14 +70,15 @@ a {
   display: none !important; /* stylelint-disable-line declaration-no-important */
 }
 
-.btn-reset {
+button {
   border: none;
   padding: 0;
   background-color: transparent;
   cursor: pointer;
 }
 
-.list-reset {
+ul,
+li {
   list-style: none;
   margin: 0;
   padding: 0;
@@ -147,4 +157,58 @@ a {
   > * {
     min-width: 0;
   }
+}
+
+.main-title {
+  margin-bottom: 25px;
+  font-weight: 700;
+  font-size: 72px;
+  line-height: 130%;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: var(--main-color);
+
+  &--home {
+    color: var(--light-color);
+  }
+
+  span {
+    color: var(--accent-color);
+  }
+}
+
+.main-descr {
+  font-size: 20px;
+  line-height: 150%;
+  color: var(--storm-color);
+
+  &--home {
+    margin-bottom: 60px;
+    color: var(--light-color);
+  }
+}
+
+.btn {
+  border-style: solid;
+  border-width: 1px;
+  border-color: transparent;
+  border-radius: 4px;
+  padding: 16px 38px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  color: var(--light-color);
+}
+.btn--stroke {
+}
+.btn--stroke-light {
+  border-color: var(--light-color);
+}
+.btn--fill {
+}
+.btn--fill-primary {
+  background: #ff5a30;
+  padding: 16px 34px;
 }
