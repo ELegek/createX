@@ -1,0 +1,10 @@
+.learn-more {
+  @include flex-all-center;
+  gap: 40px;
+  &__subtitle {
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 150%;
+    color: var(--main-color);
+  }
+}
