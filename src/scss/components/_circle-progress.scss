@@ -1,68 +1,10 @@
-// .circular-progress,
-// .circular-progress__years,
-// .circular-progress__hours,
-// .circular-progress__projects {
-//   margin-bottom: 20px;
-//   position: relative;
-//   display: flex;
-//   align-items: center;
-//   justify-content: center;
-//   height: 150px;
-//   width: 150px;
-//   border-radius: 50%;
-//   background: conic-gradient(#f89828 1deg, rgba(248, 152, 40, 0.6) 0deg);
-// }
-
-// .circular-progress__years {
-//   background: conic-gradient(#f52f6e 1deg, rgba(245, 47, 110, 0.6) 0deg);
-// }
-
-// .circular-progress__hours {
-//   background: conic-gradient(#5a87fc 1deg, rgba(90, 135, 252, 0.6) 0deg);
-// }
-
-// .circular-progress__projects {
-//   background: conic-gradient(#03cea4 1deg, rgba(3, 206, 164, 0.6) 0deg);
-// }
-
-// .circular-progress,
-// .circular-progress__years,
-// .circular-progress__hours,
-// .circular-progress__projects {
-//   &::before {
-//     content: "";
-//     position: absolute;
-//     height: 134px;
-//     width: 134px;
-//     border-radius: 50%;
-//     background-color: #fff;
-//   }
-// }
-
-// .progress-value,
-// .progress-value__years,
-// .progress-value__hours,
-// .progress-value__projects {
-//   position: relative;
-//   font-weight: 700;
-//   font-size: 32px;
-//   line-height: 150%;
-//   color: var(--main-color);
-// }
-
-// .text {
-//   font-weight: 400;
-//   font-size: 14px;
-//   line-height: 150%;
-//   color: var(--main-color);
-// }
-
 #circular-1,
 #circular-2,
 #circular-3,
 #circular-4 {
   width: 148px;
   height: 148px;
+  margin-bottom: 23px;
 }
 
 .progress-text {
@@ -73,5 +15,13 @@
   align-items: center;
   text-align: center;
 
+  color: var(--main-color);
+}
+.text {
+  display: block;
+  text-align: center;
+  font-size: 14px;
+  line-height: 150%;
+  text-align: center;
   color: var(--main-color);
 }

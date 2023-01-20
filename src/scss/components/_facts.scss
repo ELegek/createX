@@ -1,5 +1,20 @@
 .facts {
+  overflow: hidden;
+  position: relative;
   padding-top: 181px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -196px;
+    left: -6px;
+    width: 570px;
+    height: 1065px;
+    background-image: url("../img/fact-bg.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
   &__list {
     margin: 0 auto;
     display: grid;
