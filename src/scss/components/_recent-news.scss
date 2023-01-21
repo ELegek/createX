@@ -1,7 +1,9 @@
 .recent {
   background-color: #fff;
   padding-top: 180px;
+  padding-bottom: 119px;
   &__list {
+    margin-bottom: 80px;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: repeat(2, 255px);
@@ -38,6 +40,7 @@
   &__img {
   }
   &__text {
+    padding: 14px 24px;
   }
   &__title {
     a {
@@ -56,31 +59,40 @@
 }
 .article-meta {
   display: flex;
-  gap: 10px;
-  &__category {
-    margin-bottom: 16px;
-    display: inline-block;
+  align-items: center;
+  gap: 25px;
+  margin-bottom: 16px;
+  &__item {
+    position: relative;
     font-size: 14px;
     line-height: 150%;
     color: var(--storm-color);
+
+    &:not(:last-child) {
+      &::after {
+        content: "";
+        position: absolute;
+        top: 50%;
+        right: -12px;
+        width: 1px;
+        height: 11px;
+        background-color: var(--storm-color);
+        transform: translate(0px, -50%);
+      }
+    }
   }
-  &__time {
-    margin-bottom: 16px;
-    display: inline-block;
-    font-size: 14px;
-    line-height: 150%;
-    color: var(--storm-color);
-  }
-  &__comments {
-    margin-bottom: 16px;
-    display: inline-block;
-    font-size: 14px;
-    line-height: 150%;
-    color: var(--storm-color);
-  }
+
   &__descr {
     display: none;
     line-height: 160%;
     color: var(--gray-color);
   }
+}
+
+.comments {
+  padding-left: 24px;
+  background-image: url("../img/icon-comments.svg");
+  background-position: left center;
+  background-size: 16px 16px;
+  background-repeat: no-repeat;
 }
