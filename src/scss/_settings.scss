@@ -196,14 +196,23 @@ li {
   letter-spacing: 0.5px;
   text-transform: uppercase;
   color: var(--light-color);
-}
 
-.btn--stroke-light {
-  border-color: var(--light-color);
-}
+  &--stroke {
+    &-light {
+      border-color: var(--light-color);
+    }
+    &-primary {
+      display: inline-block;
+      color: var(--accent-color);
+      border-color: var(--accent-color);
+    }
+  }
 
-.btn--fill-primary {
-  background: #ff5a30;
+  &--fill {
+    &-primary {
+      background: #ff5a30;
+    }
+  }
 }
 
 .title {

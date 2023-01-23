@@ -19,11 +19,12 @@
         <span class="form-field__caption">Message*</span>
         <textarea name="message" placeholder="Your message" class="form-field__input form-field__input--big"></textarea>
       </label>
-      <label class="custom-checkbox">
-        <input type="checkbox" class="custom-checkbox__input">
-        <span class="custom-checkbox__text">I agree to receive communications from Createx Construction Bureau.</span>
-      </label>
-      <buttn class="contacts-form__btn btn btn--fill-primary">send request</buttn>
+      <div class="checkbox">
+        <input id="c_1" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+        <label for="c_1" class="checkbox__label"><span class="checkbox__text">I agree to receive communications from
+            Createx Construction Bureau.</span></label>
+      </div>
+      <button class="contacts-form__btn btn btn--fill-primary">send request</button>
     </form>
   </div>
 </section>
