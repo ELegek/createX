@@ -6,7 +6,7 @@
 @import "settings";
 
 // Подключение UI компонентов
-// @import "./base/spollers";
+@import "./base/spollers";
 @import "./base/checkbox.scss";
 
 // подключения компонентов страницы
@@ -36,3 +36,8 @@
 // Services Page
 @import "./components/hero-services";
 @import "./components/services-content";
+
+// Design Page
+@import "./components/offer";
+@import "./components/how-we-do";
+@import "./components/pricing";

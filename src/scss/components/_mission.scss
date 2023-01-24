@@ -1,6 +1,38 @@
 .mission {
   padding-bottom: 28px;
   background-color: var(--light-color);
+
+  &--design {
+    padding: 79px 0 75px;
+    background-color: var(--main-color);
+
+    &__title {
+      color: #ffffff;
+    }
+
+    &__subtitle {
+      color: #fff !important;
+    }
+
+    &__wrapper {
+      text-align: center;
+      position: relative;
+      top: 101px;
+    }
+
+    &__btn {
+      padding: 15px 111px 15px 111px;
+    }
+    .mission__item--quality {
+      background-image: url("../img/design/ic-1.svg");
+    }
+    .mission__item--safety {
+      background-image: url("../img/design/ic-2.svg");
+    }
+    .mission__item--comfort {
+      background-image: url("../img/design/ic-3.svg");
+    }
+  }
   &__list {
     --mission-gap: 94px;
     display: grid;
@@ -30,9 +62,7 @@
       }
     }
   }
-  &__item--quality {
-    background-image: url("../img/quality.svg");
-  }
+
   &__subtitle {
     margin-bottom: 8px;
     font-weight: 700;
@@ -49,6 +79,9 @@
   }
   &__item--comfort {
     background-image: url("../img/comfort.svg");
+  }
+  &__item--quality {
+    background-image: url("../img/quality.svg");
   }
 }
 

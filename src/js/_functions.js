@@ -89,5 +89,5 @@ console.log(mobileCheck());
 // import "./functions/dynamic_adapt.js";
 
 // Реализация spoller
-// import * as functionsUI from "./functions/spollers";
-// functionsUI.spollers();
+import * as functionsUI from "./functions/spollers";
+functionsUI.spollers();

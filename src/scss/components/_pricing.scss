@@ -1,0 +1,129 @@
+.pricing {
+  position: relative;
+  padding: 82px 0 27px;
+  background-color: #f4f5f7;
+
+  &__decorate {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  &__table {
+  }
+
+  &__descr {
+    margin-bottom: 60px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 150%;
+    text-align: center;
+    color: var(--storm-color);
+  }
+}
+
+.table {
+  border-collapse: collapse;
+  width: 100%;
+  &__wrapper {
+    position: relative;
+    z-index: 5;
+    width: 100%;
+    border: 1px solid #e5e8ed;
+    box-shadow: 0px 80px 80px -20px rgba(154, 156, 165, 0.08),
+      0px 30px 24px -10px rgba(154, 156, 165, 0.05),
+      0px 12px 10px -6px rgba(154, 156, 165, 0.04),
+      0px 4px 4px -4px rgba(30, 33, 44, 0.03);
+    border-radius: 4px;
+    background-color: #ffffff;
+  }
+
+  &__header {
+  }
+  &__row {
+  }
+  &__th {
+    padding: 31px 0 24px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 150%;
+    color: var(--main-color);
+
+    &:first-child {
+      padding-left: 24px;
+      padding-right: 24px;
+      text-align: left;
+      vertical-align: bottom;
+    }
+  }
+  &__heading {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 150%;
+    text-transform: uppercase;
+    text-align: center;
+    color: var(--main-color);
+  }
+  &__per {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 150%;
+    color: var(--storm-color);
+  }
+  &__body {
+    .table__row {
+      &:nth-child(odd) {
+        background-color: #f4f5f7;
+      }
+
+      &:last-child {
+        .table__col {
+          padding-top: 30px;
+          padding-bottom: 30px;
+        }
+      }
+    }
+  }
+  &__col {
+    padding: 16px 0px;
+    vertical-align: middle;
+    text-align: center;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 160%;
+    color: var(--gray-color);
+
+    .btn {
+      padding: 0px 20px;
+      font-weight: 700;
+      font-size: 12px;
+      line-height: 36px;
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+      color: #ff5a30;
+    }
+    &:first-child {
+      padding-left: 24px;
+
+      text-align: left;
+    }
+  }
+  &__chek {
+    vertical-align: middle;
+    font-size: 0;
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background-image: url("../img/table-check.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  &__text {
+    line-height: 160%;
+    color: var(--gray-color);
+  }
+}
+.btn {
+}
+.btn--stroke-primary {
+}

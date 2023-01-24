@@ -185,32 +185,61 @@ li {
 }
 
 .btn {
+  display: inline-block;
   border-style: solid;
   border-width: 1px;
   border-color: transparent;
   border-radius: 4px;
-  padding: 16px 38px;
+  padding: 15px 39px;
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
   letter-spacing: 0.5px;
   text-transform: uppercase;
   color: var(--light-color);
+  transition: background-color 0.3s ease-in-out, border-color 0.3s ease-in-out;
+
+  &--fill {
+    background-color: var(--accent-color);
+
+    &:focus {
+      outline: 2px solid var(--accent-color);
+      outline-offset: 2px;
+    }
+
+    &:hover {
+      background-color: var(--color-active);
+    }
+
+    &:active {
+      background-color: var(--color-active);
+    }
+  }
 
   &--stroke {
     &-light {
       border-color: var(--light-color);
+      color: var(--light-color);
     }
-    &-primary {
-      display: inline-block;
-      color: var(--accent-color);
-      border-color: var(--accent-color);
-    }
-  }
 
-  &--fill {
     &-primary {
-      background: #ff5a30;
+      border-color: var(--accent-color);
+      color: var(--accent-color);
+    }
+
+    &:focus {
+      outline: 2px solid var(--accent-color);
+      outline-offset: 2px;
+    }
+
+    &:hover {
+      border-color: var(--accent-color);
+      background-color: var(--accent-color);
+    }
+
+    &:active {
+      border-color: var(--accent-color);
+      background-color: var(--color-active);
     }
   }
 }
