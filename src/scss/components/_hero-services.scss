@@ -18,6 +18,18 @@
     letter-spacing: 1px;
     text-transform: uppercase;
     color: var(--main-color);
+
+    &--small {
+      font-size: 64px;
+      line-height: 120%;
+      letter-spacing: 1px;
+      text-transform: inherit;
+      color: var(--main-color);
+    }
+
+    &--mb {
+      margin-bottom: 58px;
+    }
   }
   &__descr {
     max-width: 600px;
@@ -36,5 +48,31 @@
   &__design {
     background-image: url("../img/design/hero-design-bg.png");
     background-position: top 0px right -7px;
+  }
+
+  &__work {
+    background-image: url("../img/work/hero-work-bg.png");
+    background-position: top 0px right -7px;
+  }
+
+  &__work-card {
+    background-image: url("../img/work-card/hero-work-card-bg.png");
+    background-position: top 48px right -7px;
+    background-color: var(--light-color);
+  }
+}
+
+.work-images {
+  &-slider {
+    margin-bottom: 20px;
+  }
+  .swiper-slide {
+    img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 4px;
+    }
   }
 }

@@ -26,11 +26,54 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-convert:before {
+  content: "\e910";
+}
+.icon-brain:before {
+  content: "\e902";
+}
+.icon-budget:before {
+  content: "\e903";
+}
+.icon-camera:before {
+  content: "\e904";
+}
+.icon-construction:before {
+  content: "\e905";
+}
+.icon-contract:before {
+  content: "\e906";
+}
+.icon-hand:before {
+  content: "\e907";
+}
+.icon-helmet:before {
+  content: "\e908";
+}
+.icon-house:before {
+  content: "\e909";
+}
+.icon-like:before {
+  content: "\e90a";
+}
+.icon-painting:before {
+  content: "\e90b";
+}
+.icon-pantone:before {
+  content: "\e90c";
+}
+.icon-plan:before {
+  content: "\e90d";
+}
+.icon-slippers:before {
+  content: "\e90e";
+}
+.icon-success:before {
+  content: "\e90f";
+}
 .icon-mute:before {
   content: "\e900";
-  color: #fff;
 }
 .icon-play:before {
   content: "\e901";
-  color: #fff;
 }

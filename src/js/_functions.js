@@ -5,6 +5,8 @@
 import { mobileCheck } from "./functions/mobile-check";
 console.log(mobileCheck());
 
+import * as functionsUI from "./files/functions";
+
 // Определение ширины экрана
 // import { isMobile, isTablet, isDesktop } from './functions/check-viewport';
 // if (isDesktop()) {
@@ -34,8 +36,8 @@ console.log(mobileCheck());
 // const modal = new GraphModal();
 
 // Реализация табов
-// import GraphTabs from 'graph-tabs';
-// const tabs = new GraphTabs('tab');
+// import GraphTabs from "graph-tabs";
+// const tabs = new GraphTabs("tabs");
 
 // Получение высоты шапки сайта (не забудьте вызвать функцию)
 // import { getHeaderHeight } from './functions/header-height';
@@ -89,5 +91,10 @@ console.log(mobileCheck());
 // import "./functions/dynamic_adapt.js";
 
 // Реализация spoller
-import * as functionsUI from "./functions/spollers";
 functionsUI.spollers();
+
+// Реализация tabs
+functionsUI.tabs();
+
+// Реализация showmore
+// functionsUI.showMore();

@@ -126,16 +126,16 @@ var element4 = document.querySelector("#circular-4");
 
 // Запускаем функцию
 // Запускаем при скролле
-window.addEventListener("scroll", function () {
-  if (element1 && element2 && element3 && element4) {
+if (element1 && element2 && element3 && element4) {
+  window.addEventListener("scroll", function () {
     visible(element1);
     visible(element2);
     visible(element3);
     visible(element4);
-  }
-});
+  });
 
-visible(element1);
-visible(element2);
-visible(element3);
-visible(element4);
+  visible(element1);
+  visible(element2);
+  visible(element3);
+  visible(element4);
+}

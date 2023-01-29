@@ -7,7 +7,9 @@
 
 // Подключение UI компонентов
 @import "./base/spollers";
-@import "./base/checkbox.scss";
+@import "./base/checkbox";
+// @import "./base/tabs";
+// @import "./base/showmore";
 
 // подключения компонентов страницы
 @import "./components/nav";
@@ -41,3 +43,6 @@
 @import "./components/offer";
 @import "./components/how-we-do";
 @import "./components/pricing";
+
+// Work
+@import "./components/portfolio";
