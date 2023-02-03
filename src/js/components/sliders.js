@@ -1,10 +1,10 @@
-import Swiper, { Navigation, Pagination } from "swiper";
-Swiper.use([Navigation, Pagination]);
+import Swiper, { Navigation, Thumbs } from "swiper";
 
 // Portfolio section
 const portfolioSlider = document.querySelector(".portfolio-section__slider");
 if (portfolioSlider) {
   new Swiper(".portfolio-section__slider", {
+    modules: [Navigation],
     slidesPerView: 3,
     spaceBetween: 30,
     loop: true,
@@ -19,6 +19,7 @@ if (portfolioSlider) {
 const testimonialsSlider = document.querySelector(".testimonials__slider");
 if (testimonialsSlider) {
   new Swiper(".testimonials__slider", {
+    modules: [Navigation],
     slidesPerView: 1,
     loop: true,
     navigation: {
@@ -28,25 +29,25 @@ if (testimonialsSlider) {
   });
 }
 
-// work-card
-const workImages = document.querySelector(".work-images-slider");
+// work - card;
+const workImagesSlider = document.querySelector(".work-images-slider");
+const workImagesMini = document.querySelector(".work-images-mini");
 
-if (workImages) {
-  new Swiper(".work-images-nav", {
+if (workImagesSlider) {
+  var swiperMini = new Swiper(workImagesMini, {
     spaceBetween: 20,
     slidesPerView: 10,
     freeMode: true,
-    watchSlidesProgress: true,
   });
-  new Swiper(workImagesSlider, {
+  var swiper2 = new Swiper(workImagesSlider, {
+    modules: [Navigation, Thumbs],
     spaceBetween: 20,
-    slidesPerView: 1,
     navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
+      nextEl: ".work-images__next",
+      prevEl: ".work-images__prev",
     },
     thumbs: {
-      swiper: workImagesNav,
+      swiper: swiperMini,
     },
   });
 }

@@ -52,10 +52,10 @@ import * as functionsUI from "./files/functions";
 // });
 
 // Подключение свайпера
-// import Swiper, { Navigation, Pagination } from 'swiper';
+// import Swiper, { Navigation, Pagination } from "swiper";
 // Swiper.use([Navigation, Pagination]);
 // const swiper = new Swiper(el, {
-//   slidesPerView: 'auto',
+//   slidesPerView: "auto",
 // });
 
 // Подключение анимаций по скроллу
