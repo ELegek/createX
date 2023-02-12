@@ -1,0 +1,45 @@
+.desicions {
+  background-color: var(--color-athens);
+  padding-top: 80px;
+  &__container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 30px;
+  }
+  &__left {
+    grid-column: 6 span;
+    margin-bottom: -60px;
+  }
+  &__right {
+    grid-column: 6 span;
+  }
+  &__title {
+    font-weight: 700;
+    font-size: 46px;
+    line-height: 130%;
+    color: var(--main-color);
+    margin-bottom: 60px;
+  }
+  &__list {
+  }
+  &__item {
+    position: relative;
+    padding-left: 36px;
+    line-height: 160%;
+    color: var(--gray-color);
+    margin-bottom: 20px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 3px;
+      width: 20px;
+      height: 20px;
+      background-image: url("../img/work-card/check.svg");
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+  }
+}

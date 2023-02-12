@@ -1,6 +1,12 @@
 import { Circle } from "progressbar.js";
 
-var circleBar1 = new Circle("#circular-1", {
+// Получаем нужный элемент
+var element1 = document.querySelector("#circular-1");
+var element2 = document.querySelector("#circular-2");
+var element3 = document.querySelector("#circular-3");
+var element4 = document.querySelector("#circular-4");
+
+var circleBar1 = new Circle(element1, {
   color: "#F89828",
   strokeWidth: 6,
   trailWidth: 6,
@@ -23,7 +29,7 @@ var circleBar1 = new Circle("#circular-1", {
     shape.setText(Math.round(shape.value() * 100) + "%");
   },
 });
-var circleBar2 = new Circle("#circular-2", {
+var circleBar2 = new Circle(element2, {
   color: "#F52F6E",
   strokeWidth: 6,
   trailWidth: 6,
@@ -46,7 +52,7 @@ var circleBar2 = new Circle("#circular-2", {
     shape.setText(Math.round(shape.value() * 26.6));
   },
 });
-var circleBar3 = new Circle("#circular-3", {
+var circleBar3 = new Circle(element3, {
   color: "#5A87FC",
   strokeWidth: 6,
   trailWidth: 6,
@@ -69,7 +75,7 @@ var circleBar3 = new Circle("#circular-3", {
     shape.setText(Math.round(shape.value() * 11815));
   },
 });
-var circleBar4 = new Circle("#circular-4", {
+var circleBar4 = new Circle(element4, {
   color: "#03CEA4",
   strokeWidth: 6,
   trailWidth: 6,
@@ -118,15 +124,9 @@ var visible = function (e) {
   }
 };
 
-// Получаем нужный элемент
-var element1 = document.querySelector("#circular-1");
-var element2 = document.querySelector("#circular-2");
-var element3 = document.querySelector("#circular-3");
-var element4 = document.querySelector("#circular-4");
-
 // Запускаем функцию
 // Запускаем при скролле
-if (element1 && element2 && element3 && element4) {
+if (element1) {
   window.addEventListener("scroll", function () {
     visible(element1);
     visible(element2);
